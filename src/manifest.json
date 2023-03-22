@@ -1,0 +1,23 @@
+{
+  "name": "Hide Youtube Shorts",
+  "description": "Hide YouTube Shorts for good. Not only for 30 days.",
+  "manifest_version": 2,
+  "version": "1.0",
+  "homepage_url": "https://github.com/xgimp/hide-youtube-shorts-ff-plugin",
+  "icons": {
+    "48": "icons/icon-48.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.youtube.com/*"
+      ],
+      "js": [
+        "index.js"
+      ]
+    }
+  ]
+}
