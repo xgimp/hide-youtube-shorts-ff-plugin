@@ -1,0 +1,7 @@
+v1.1
+- hide Shorts from "Suggestions" sidebar on video detail page
+
+v1.0
+- initial release
+
+

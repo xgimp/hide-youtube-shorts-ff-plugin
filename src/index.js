@@ -26,8 +26,14 @@ function waitForElement(selector) {
     });
 }
 
+const elementsToHide = [
+    "[is-shorts]", // Box on the main page
+    "ytd-reel-shelf-renderer" // Box in the suggestions sidebar on video detail page
+];
 
-waitForElement('[is-shorts]').then((myElement) => {
-    console.log('[Youtube Shorts Hide] YouTube Shorts element found, hiding it :-)');
-    myElement.style.display = "none";
+elementsToHide.forEach((element) => {
+    waitForElement(element).then((elementToHide) => {
+        console.log('[Youtube Shorts Hide] YouTube Shorts element found, hiding it :-)');
+        elementToHide.style.display = "none";
+    });
 });
