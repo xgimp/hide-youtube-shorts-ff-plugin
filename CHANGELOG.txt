@@ -1,3 +1,6 @@
+v1.3
+- hide Shorts from seasrch results page
+
 v1.2
 - hide Shorts element using CSS only
 
