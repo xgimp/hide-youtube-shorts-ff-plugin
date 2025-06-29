@@ -1,4 +1,6 @@
 [is-shorts], 
-ytd-reel-shelf-renderer {
+ytd-reel-shelf-renderer,
+yt-section-header-view-model,
+yt-section-header-view-model + div {
     display: none !important;
 }
